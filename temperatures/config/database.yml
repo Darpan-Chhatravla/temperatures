@@ -1,0 +1,16 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 5
+
+development:
+  <<: *default
+  database: temperatures_development
+
+test:
+  <<: *default
+  database: temperatures_test
+
+production:
+  <<: *default
+  database: temperatures_production

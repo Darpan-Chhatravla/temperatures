@@ -1,0 +1,17 @@
+en:
+  activerecord:
+    errors:
+      models:
+        city:
+          attributes:
+            slug:
+              can_not_blank: "can not blank"
+              to_long_by_slug: "should be less than 50 characters"
+              uniqueness_by_slug: "has already been taken"
+              format_by_slug: "should contain only letters"
+            latitude:
+              numericality_by_latitude: "is invalid"
+              uniqueness_by_location: "already in use"
+            longitude:
+              numericality_by_longitude: "is invalid"
+              uniqueness_by_location: "already in use"
